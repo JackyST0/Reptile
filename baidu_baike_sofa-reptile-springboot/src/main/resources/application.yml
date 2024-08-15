@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: baidu_baike-reptile
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:am-wz965952ym0fc2txk167330.ads.aliyuncs.com}:${MYSQL_PORT:3306}/sfc_minesweeper?useUnicode=true&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=Asia/Shanghai
+    username: ${MYSQL_USERNAME:yujinbiao}
+    password: ${MYSQL_PASSWORD:Yujinbiao@#987}
+  redis:
+    host: localhost
+    port: 6379
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
